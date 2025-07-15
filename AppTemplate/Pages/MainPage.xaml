@@ -25,6 +25,7 @@
              xmlns:balance="clr-namespace:PlutoFramework.Components.Balance;assembly=PlutoFramework"
              xmlns:buttons="clr-namespace:PlutoFramework.Components.Buttons;assembly=PlutoFramework"
              xmlns:address="clr-namespace:PlutoFramework.Components.AddressView;assembly=PlutoFramework"
+             xmlns:components="clr-namespace:AppTemplate.Components"
              BackgroundColor="{AppThemeBinding Light=White, Dark=#0a0a0a}"
              Shell.PresentationMode="ModalNotAnimated"
              xmlns:card="clr-namespace:PlutoFramework.Components.Card;assembly=PlutoFramework"
@@ -46,6 +47,10 @@
                     x:Name="stackLayout"
                     Spacing="15"
                     Padding="20, 15, 20, 100">
+
+                    <components:YourBalanceView />
+
+                    <components:ReceiveAndTransferButtonsView />
 
                     <balance:UsdBalanceView />
 

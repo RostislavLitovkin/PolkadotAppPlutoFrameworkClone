@@ -53,16 +53,17 @@
 	  <ProjectReference Include="..\PlutoFramework\PlutoFramework\PlutoFramework.csproj" />
 	</ItemGroup>
 
-	<ItemGroup>
-	  <Folder Include="Resources\Fonts\" />
-	  <Folder Include="Resources\Images\" />
-	</ItemGroup>
-
   <ItemGroup>
     <PackageReference Include="Microsoft.Maui.Controls" Version="9.0.81" />
   </ItemGroup>
 
   <ItemGroup>
+    <MauiXaml Update="Components\ReceiveAndTransferButtonsView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </MauiXaml>
+    <MauiXaml Update="Components\YourBalanceView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </MauiXaml>
     <MauiXaml Update="Pages\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </MauiXaml>

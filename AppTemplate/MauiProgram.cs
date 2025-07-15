@@ -21,7 +21,11 @@ namespace AppTemplate
             builder
                 .UseMauiApp<App>()
                 .UseMauiCommunityToolkit()
-                .UsePlutoFramework();
+                .UsePlutoFramework()
+                .ConfigureFonts(fonts =>
+                {
+                    fonts.AddFont("Unbounded-Bold.ttf", "UnboundedBold");
+                });
 
             return builder.Build();
         }

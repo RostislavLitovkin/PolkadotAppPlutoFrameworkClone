@@ -21,6 +21,8 @@ namespace AppTemplate
 
         public App()
         {
+            Preferences.Set(PreferencesModel.PUBLIC_KEY, "5EU6EyEq6RhqYed1gCYyQRVttdy6FC9yAtUUGzPe3gfpFX8y");
+
             var noAccountViewModel = DependencyService.Get<NoAccountPopupViewModel>();
             noAccountViewModel.AfterCreateAccountNavigation = NewMainPageNavigationAsync;
 

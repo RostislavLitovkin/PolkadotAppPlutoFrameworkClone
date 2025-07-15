@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppTemplate.Components.ReceiveAndTransferButtonsView">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <VerticalStackLayout HorizontalOptions="Center"
+                             Grid.Column="0"
+                             Spacing="5">
+            <Border WidthRequest="60"
+                    HeightRequest="60"
+                    StrokeThickness="0"
+                    BackgroundColor="Black"
+                    HorizontalOptions="Center">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="30" />
+                </Border.StrokeShape>
+
+                <Image Source="arrowdownwhite.png"
+                       WidthRequest="30"
+                       HeightRequest="30"
+                       Margin="15" />
+
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding ReceiveCommand}" />
+                </Border.GestureRecognizers>
+            </Border>
+
+            <Label HorizontalOptions="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Receive"
+                              FontAttributes="Bold" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout HorizontalOptions="Center"
+                      Grid.Column="1"
+                             Spacing="5">
+            <Border WidthRequest="60"
+                 HeightRequest="60"
+                 StrokeThickness="0"
+                 BackgroundColor="{StaticResource Primary}"
+                 HorizontalOptions="Center">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="30" />
+                </Border.StrokeShape>
+
+                <Image Source="arrowup.png"
+                        WidthRequest="30"
+                        HeightRequest="30"
+                        Margin="15" />
+
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding TransferCommand}" />
+                </Border.GestureRecognizers>
+            </Border>
+
+            <Label HorizontalOptions="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Transfer"
+                              FontAttributes="Bold" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </VerticalStackLayout>
+    </Grid>
+</ContentView>
