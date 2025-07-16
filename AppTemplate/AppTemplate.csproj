@@ -58,6 +58,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <MauiXaml Update="Components\BalancesCardListView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </MauiXaml>
     <MauiXaml Update="Components\ReceiveAndTransferButtonsView.xaml">
       <Generator>MSBuild:Compile</Generator>
     </MauiXaml>

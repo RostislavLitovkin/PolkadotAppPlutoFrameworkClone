@@ -52,11 +52,7 @@
 
                     <components:ReceiveAndTransferButtonsView />
 
-                    <balance:UsdBalanceView />
-
-                    <buttons:ReceiveAndTransferView />
-
-                    <address:PolkadotAddressView />
+                    <components:BalancesCardListView />
 
                 </VerticalStackLayout>
             </ScrollView>
